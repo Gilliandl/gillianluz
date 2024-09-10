@@ -11,19 +11,19 @@
     <section>
         <h1>Calculadora</h1>
     
-        <input type="text" placeholder="Número1">
-        <input type="text" placeholder="Número2"> 
+        <input id="numero1Input" type="text" placeholder="Número1">
+        <input id="numero2Input" type="text" placeholder="Número2"> 
 
-        <select name="" id="">
-            <option value="">Soma</option>
-            <option value="">Subtração</option>
-            <option value="">Multiplicação</option>
-            <option value="">Divisão</option>
+        <select name="calcular" id="operacaoSelect">
+            <option value= "+" >Soma</option>
+            <option value= "-" >Subtração</option>
+            <option value= "*" >Multiplicação</option>
+            <option value= "/" >Divisão</option>
         </select>
 
         <div>
-            <button>Calculadora</button>
-            <button>Limpar</button>
+            <button onclick="calcular()">Calcular</button>
+            <button id="limparButton">Limpar</button>
         </div>
     </section>
     <script src="calculadora.js"></script>
